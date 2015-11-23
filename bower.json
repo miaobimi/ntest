@@ -1,0 +1,29 @@
+{
+  "name": "testbower",
+  "description": "ready for chat system",
+  "main": "",
+  "authors": [
+    "miaobimi"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bower",
+    "test"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}

@@ -1,0 +1,8 @@
+.logindiv{
+	display: block;
+	width: 600px;
+	height: 400px;
+	box-shadow: 0 0 10px #ccc;
+	margin: 30px auto;
+	padding: 100px 60px;
+}

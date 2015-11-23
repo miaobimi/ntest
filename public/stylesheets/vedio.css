@@ -1,0 +1,268 @@
+body{
+	background: url(../images/back.jpg) repeat 0 0;
+}
+.vedio-left{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 640px;
+	border-radius: 4px;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.vedio-left .hide-left{
+	display:block;
+	float: left;
+	width: 100%;
+	height: 640px;
+	background: #ccc;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.vedio-left .left-content{
+	display:block;
+	float: left;
+	width: 90%;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	/*background: #333;*/
+	height: 600px;
+	border-radius: 4px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 2;
+}
+.vedio-left .btn-list ul li{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	margin: 10px 0;
+}
+.vedio-center{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 640px;
+	border-radius: 4px;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.vedio-center .hide-center{
+	display:block;
+	float: left;
+	width: 100%;
+	height: 640px;
+	background: #ccc;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.vedio-center .center-content{
+	display:block;
+	float: left;
+	width: 96%;
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 4px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 2;
+}
+.vedio-right{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 640px;
+	border-radius: 4px;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.vedio-right .hide-right{
+	display:block;
+	float: left;
+	width: 100%;
+	height: 640px;
+	background: #ccc;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.vedio-right .right-content{
+	display:block;
+	float: left;
+	width: 96%;
+	margin-top: 2%;
+	margin-left: 2%;
+	border-radius: 4px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 2;
+}
+.vedio-right .right-content .chat-content{
+	display: block;
+	float: left;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	width: 100%;
+	height: 550px;
+	overflow-y: auto;
+}
+.vedio-right .right-content .chat-input{
+	display: block;
+	float: left;
+	margin-top: 15px;
+	/*border: 1px solid blue;*/
+	width: 100%;
+	padding: 5px 0;
+}
+.vedio-right .right-content .chat-input span{
+	display: block;
+	float: left;
+	line-height: 40px;
+	padding: 0 1%;
+}
+.vedio-right .right-content .chat-input input{
+	display: block;
+	float: left;
+	height: 40px;
+	width: 75%;
+	font-size: 18px;
+	border: 0 none;
+}
+.vedio-right .right-content .chat-input button{
+	margin-top: 3px;
+	margin-left: 1%;
+}
+.vedio-header{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 60px;
+	margin: 10px 0;
+	border-radius: 4px;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.vedio-header .hide-header{
+	display:block;
+	float: left;
+	width: 100%;
+	height: 60px;
+	background: #ccc;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.vedio-header .header-content{
+	display:block;
+	float: left;
+	width: 96%;
+	margin-top: 2%;
+	margin-left: 2%;
+	border-radius: 4px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 2;
+}
+#message section{
+	clear: both;
+	padding: 10px;
+}
+#message section.service{
+	display: block;
+	float: left;
+	text-align: left;
+}
+#message section.user{
+	display: block;
+	float: right;
+	text-align: right;
+}
+.service > span {
+    color: #999;
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+    height: 36px;
+    max-width: 65px;
+    overflow: hidden;
+}
+section.service > div::before{
+    border-bottom: 4px solid transparent;
+    border-right: 7px solid #EFEFF4;
+    border-top: medium solid transparent;
+    content: "";
+    height: 0;
+    left: -5px;
+    position: absolute;
+    top: 4px;
+    width: 0;
+}
+
+section.user > div::before {
+    border-bottom: 4px solid transparent;
+    border-left: 7px solid #007aff;
+    border-top: medium solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -5px;
+    top: 4px;
+    width: 0;
+}
+section.service > div {
+    background-color: #EFEFF4;
+    border-radius: 10px;
+    box-shadow: 0 0 1px #EFEFF4 inset;
+    color: #666;
+    display: inline-block;
+    margin: 0 10px 0 12px;
+    max-width: 225px;
+    padding: 8px;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    word-break: break-all;
+}
+section.user > div {
+    background-color: #007aff;
+    border-radius: 10px;
+    box-shadow: 0 0 1px #007aff inset;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px 0 12px;
+    max-width: 225px;
+    padding: 8px;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    word-break: break-all;
+}
+.user > span {
+    color: #f60;
+    float: right;
+    font-size: 14px;
+    font-weight: normal;
+    height: 36px;
+    max-width: 65px;
+    overflow: hidden;
+}

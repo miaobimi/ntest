@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.min.css' />
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='/public/stylesheets/vedio.css' />
+	<script src="public/javascripts/socket.io.js"></script>
+	<script src="public/javascripts/vedio.js"></script>
+  </head>
+  <body>
+  	<div class="container-fluid">
+  		<div class="header clearfix">
+  			<div class="vedio-header">
+	          	<div class="hide-header"></div>
+	          	<div class="header-content">
+	          		<h3 align="left"><%= title %></h3>
+	          	</div>
+	        </div>
+	    </div>
+	    <div class="row">
+	    	<div class="col-lg-2">
+	         	<div class="vedio-left">
+	         		<div class='hide-left'></div>
+	         		<div class="left-content">
+		         		<div class="btn-list">
+		         			<ul class="list-unstyled">
+		         				<li>
+		         					<a href="">
+		         						<img class="img-circle" src="http://staff.chntz.cn/Public/Staff/Images/miao.jpg" alt="">
+		         						<span>交易规则</span>
+		         					</a>
+		         				</li>
+		         				<li>
+		         					<a href="">
+		         						<img class="img-circle" src="http://staff.chntz.cn/Public/Staff/Images/miao.jpg" alt="">
+		         						<span>交易规则</span>
+		         					</a>
+		         				</li>
+		         				<li>
+		         					<a href="">
+		         						<img class="img-circle" src="http://staff.chntz.cn/Public/Staff/Images/miao.jpg" alt="">
+		         						<span>交易规则</span>
+		         					</a>
+		         				</li>
+		         				<li>
+		         					<a href="">
+		         						<img class="img-circle" src="http://staff.chntz.cn/Public/Staff/Images/miao.jpg" alt="">
+		         						<span>交易规则</span>
+		         					</a>
+		         				</li>
+		         			</ul>
+		         		</div>
+	         		</div>
+	         	</div>
+	        </div>
+			<div class="col-lg-5">
+	          <div class="vedio-center">
+	          	<div class="hide-center"></div>
+	          	<div class="center-content">
+	          		<object width="100%" height="610" align="middle" type="application/x-shockwave-flash" id="i_Live_Player" name="i_Live_Player" t="live" data="http://yy.com/s/52792546/52792546/yyscene.swf" style="visibility: visible;"><param name="quality" value="high"><param name="wmode" value="transparent"><param name="bgcolor" value="#000000"><param name="allowscriptaccess" value="sameDomain"><param name="allowfullscreen" value="true"></object>
+	          	</div>
+	          </div>
+	        </div>
+	        <div class="col-lg-5">
+	        	<div class="vedio-right">
+		          	<div class="hide-right"></div>
+		          	<div class="right-content">
+		          		<div class="chat-content" id="message"></div>
+		          		<div class="chat-input">
+		          			<span>对所有人</span>
+		          			<input id="content" type="text">
+		          			<button id="subBtn" class="btn btn-default">发送</button>
+		          		</div>
+		          	</div>
+		        </div>
+	        </div>
+	    </div>
+	    <footer class="footer">
+	        <p>&copy; Copyright 2015</p>
+	    </footer>
+  	</div>
+  </body>
+</html>

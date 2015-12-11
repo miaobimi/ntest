@@ -1,6 +1,10 @@
 body{
 	background: url(../images/back.jpg) repeat 0 0;
 }
+.vedio-header .header-content h3{
+	display: block;
+	float: left;
+}
 .vedio-left{
 	display: block;
 	float: left;

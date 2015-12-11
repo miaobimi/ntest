@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 var io = require('socket.io')();
 
-/* GET home page. */
+/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Chat system' });
+  res.render('index', { title: 'chat system' });
 });
 
 //在线用户
@@ -34,19 +34,14 @@ io.on('connection', function(socket){
 	});
 
 	//监听用户发布聊天内容
-	socket.on('message', function(to,obj){
-		if(to.length>0){
-			for(var i=0;i<to.length;i++){
-				socket.emit(to[i]+'message',obj);
-			}
-			return;
-		}
+	socket.on('message', function(obj){
+		
 		//向所有客户端广播发布的消息
 		io.emit('message', obj); 
 
 		console.log(obj.username+'说：'+obj.content);
 	});
 });
-io.listen(3001);
+io.listen(3002);
 
 module.exports = router;

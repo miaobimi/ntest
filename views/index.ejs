@@ -2,94 +2,79 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='public/stylesheets/style.css' />
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
     <link rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.min.css' />
     <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="public/javascripts/socket.io.js"></script>
-    <script src="public/javascripts/index.js"></script>
-    <script>
-
-    </script>
+    <link rel='stylesheet' href='/public/stylesheets/vedio.css' />
+	<script src="public/javascripts/socket.io.js"></script>
+	<script src="public/javascripts/vedio.js"></script>
   </head>
   <body>
-  	<div class="container">
+  	<div class="container-fluid">
   		<div class="header clearfix">
-  			<h3 align="center"><%= title %></h3>
+  			<div class="vedio-header">
+	          	<div class="hide-header"></div>
+	          	<div class="header-content">
+	          		<h3 align="left"><%= title %></h3>
+	          	</div>
+	        </div>
 	    </div>
 	    <div class="row">
-	    	<div class="col-lg-8">
-	          <div id="chat-box">
-	          	<div class="chat-head">
-	          		<div class="head-img">
-	          			<img src="http://staff.chntz.cn/Public/Staff/Images/miao.jpg" alt="">
-	          		</div>
-	          		<span class="hideWindow">-</span>
-	          		<span class="closeWindow">x</span>
-	          	</div>
-	          	<div class="chat-content">
-	          		<div id="user-list">
-	          			<dl>
-	          				<dd><a href="">xx</a></dd>
-	          				<dd class="current"><a href="">aa</a></dd>
-	          				<dd><a href="">miao</a></dd>
-	          				<dd><a href="">xxx</a></dd>
-	          			</dl>
-	          		</div>
-	          		<div id="showusername"></div>
-	          		<div id="message">
-	          			<!-- <section class="user">
-	          				<div>content</div>
-	          				<span>username</span>
-	          			</section>
-	          			<section class="service">
-	          				<span>username</span>
-	          				<div>content</div>
-	          			</section> -->
-	          			
-	          		</div>
-	          	</div>
-	          	<div class="send-content">
-	          		<div class="chat-operate">
-	          		
-	          		</div>
-	          		<div class="chat-words">
-	          			<textarea name="" id="content" rows="5"></textarea>
-	          		</div>
-	          		<div class="send-btn">
-	          			<button class="btn btn-info radius" id="subBtn">发送</button>
-	          		</div>
-	          	</div>
+	    	<div class="col-lg-2">
+	         	<div class="vedio-left">
+	         		<div class='hide-left'></div>
+	         		<div class="left-content">
+		         		<div class="btn-list">
+		         			<ul class="list-unstyled">
+		         				<li>
+		         					<a href="">
+		         						<img class="img-circle" src="http://staff.chntz.cn/Public/Staff/Images/miao.jpg" alt="">
+		         						<span>交易规则</span>
+		         					</a>
+		         				</li>
+		         				<li>
+		         					<a href="">
+		         						<img class="img-circle" src="http://staff.chntz.cn/Public/Staff/Images/miao.jpg" alt="">
+		         						<span>交易规则</span>
+		         					</a>
+		         				</li>
+		         				<li>
+		         					<a href="">
+		         						<img class="img-circle" src="http://staff.chntz.cn/Public/Staff/Images/miao.jpg" alt="">
+		         						<span>交易规则</span>
+		         					</a>
+		         				</li>
+		         				<li>
+		         					<a href="">
+		         						<img class="img-circle" src="http://staff.chntz.cn/Public/Staff/Images/miao.jpg" alt="">
+		         						<span>交易规则</span>
+		         					</a>
+		         				</li>
+		         			</ul>
+		         		</div>
+	         		</div>
+	         	</div>
+	        </div>
+			<div class="col-lg-5">
+	          <div class="vedio-center">
+	          	<div class="hide-center"></div>
+	          	<!-- <div class="center-content">
+	          		<object width="100%" height="610" align="middle" type="application/x-shockwave-flash" id="i_Live_Player" name="i_Live_Player" t="live" data="http://yy.com/s/52792546/52792546/yyscene.swf" style="visibility: visible;"><param name="quality" value="high"><param name="wmode" value="transparent"><param name="bgcolor" value="#000000"><param name="allowscriptaccess" value="sameDomain"><param name="allowfullscreen" value="true"></object>
+	          	</div> -->
 	          </div>
 	        </div>
-
-	        <div class="col-lg-4">
-	        	<div id="chat-list">
-	        		<div class="list-head clearfix">
-	        			<span class="current"><a href="">个人</a></span>
-	        			<span><a href="">群</a></span>
-	        			<span><a href="">最近</a></span>
-	        		</div>
-	        		<div class="list-body">
-	        			<ul>
-	        				<li>
-	        					<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-	        					<span>在线好友</span>
-	        					<div class="li-body">
-	        						<ul id="onlineUser"></ul>
-	        					</div>
-	        				</li>
-	        				<li>
-	        					<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-	        					<span>分组一</span>
-	        				</li>
-	        				<li>
-	        					<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-	        					<span>分组二</span>
-	        				</li>
-	        			</ul>
-	        		</div>
-	        	</div>  
+	        <div class="col-lg-5">
+	        	<div class="vedio-right">
+		          	<div class="hide-right"></div>
+		          	<div class="right-content">
+		          		<div class="chat-content" id="message"></div>
+		          		<div class="chat-input">
+		          			<span>对所有人</span>
+		          			<input id="content" type="text">
+		          			<button id="subBtn" class="btn btn-default">发送</button>
+		          		</div>
+		          	</div>
+		        </div>
 	        </div>
 	    </div>
 	    <footer class="footer">
